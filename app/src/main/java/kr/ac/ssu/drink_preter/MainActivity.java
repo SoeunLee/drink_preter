@@ -121,10 +121,15 @@ public class MainActivity extends AppCompatActivity {
 
             try{
 //save yuriyuriyuri!!!!!!
+                //Log.e("yuri", "1");
                 Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+                //Log.e("yuri", "2");
                 Uri uri = Uri.parse(pictureFile.getAbsolutePath());
+                //Log.e("yuri", "3");
                 intent.setData(uri);
+                //Log.e("yuri", "4");
                 sendBroadcast(intent);
+                //Log.e("yuri", "5");
                 //FileOutputStream os = new FileOutputStream(pictureFile);
                 //os.flush();
                 //os.close();
